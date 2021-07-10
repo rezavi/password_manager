@@ -112,7 +112,7 @@ def search_page():
 
 
 #side_frame
-img_label  = PhotoImage(file = "/home/reza/Desktop/label2(1).png")
+img_label  = PhotoImage(file = getcwd() + "/img"+ "/label2(1).png")
 frame_side = Frame(win,bg = "white")
 frame_side.place(x = 0 , y = 0, height=500 , width= 150)
 Label(frame_side,image = img_label, bg="white").place(x = -5 , y = -12,height=530, width=155)
@@ -137,16 +137,16 @@ password_box =Entry(center_frame, background = "white",show = "*",foreground="or
 password_box.place(x = 150 , y = 190,height=35, width= 200)
 
 #create image_button
-submit_img = PhotoImage(file = "/home/reza/Desktop/submit.png")
-clear_img = PhotoImage(file = "/home/reza/Desktop/clear.png")
-genrator_img = PhotoImage(file = "/home/reza/Desktop/genrator.png")
-search_img = PhotoImage(file = "/home/reza/Desktop/search.png")
+submit_img = PhotoImage(file = getcwd() + "/img" + "/submit.png")
+clear_img = PhotoImage(file = getcwd() + "/img" + "/clear.png")
+genrator_img = PhotoImage(file = getcwd() + "/img"+ "/genrator.png")
+search_img = PhotoImage(file = getcwd() + "/img" + "/search.png")
 
 #button
 submit_btn = Button(center_frame,image = submit_img, bg= "white" ,highlightbackground= "white", activebackground= "white" , borderwidth= 0,command = add_form)
 submit_btn.place(x = 20, y = 330)
 clear_btn = Button(center_frame,image = clear_img, bg= "white" ,highlightbackground= "white", activebackground= "white" , borderwidth= 0,command = clear_box)
-#clear_btn.place(x = 350, y = 330)
+#clear_btn.place(x = 350, y = 330) 
 
 #gerator_btn
 genrator_btn = Button(center_frame,image = genrator_img, bg= "white" ,highlightbackground= "white", activebackground= "white" , borderwidth= 0,command = generate_page)
@@ -157,7 +157,7 @@ search_btn = Button(center_frame,image = search_img, bg= "white" ,highlightbackg
 search_btn.place(x = 350, y = 330)
 
 # secure button
-img_show = PhotoImage(file = "/home/reza/Desktop/images.png")
+img_show = PhotoImage(file = getcwd() + "/img" + "/images.png")
 show_btn = Button(center_frame,image = img_show,bg = "white", borderwidth=0, activebackground="white", highlightbackground="white",command= show_pas).place(x = 350 , y = 191)
 
 win.mainloop()
